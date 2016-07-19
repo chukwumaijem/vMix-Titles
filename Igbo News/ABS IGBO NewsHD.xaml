@@ -1,0 +1,144 @@
+<UserControl Width="1920" Height="1080" Panel.ZIndex="500" InputMethod.IsInputMethodEnabled="True" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mtl="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <UserControl.Triggers>
+    <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+      <BeginStoryboard>
+        <Storyboard RepeatBehavior="00:00:01">
+          <Storyboard.Children>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rHeadline" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+              <DoubleAnimationUsingKeyFrames.KeyFrames>
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1920" />
+                <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+              </DoubleAnimationUsingKeyFrames.KeyFrames>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Headline" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+              <DoubleAnimationUsingKeyFrames.KeyFrames>
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1920" />
+                <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+              </DoubleAnimationUsingKeyFrames.KeyFrames>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rDescription" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+              <DoubleAnimationUsingKeyFrames.KeyFrames>
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1920" />
+                <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+              </DoubleAnimationUsingKeyFrames.KeyFrames>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Description" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+              <DoubleAnimationUsingKeyFrames.KeyFrames>
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1920" />
+                <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+              </DoubleAnimationUsingKeyFrames.KeyFrames>
+            </DoubleAnimationUsingKeyFrames>
+          </Storyboard.Children>
+        </Storyboard>
+      </BeginStoryboard>
+    </EventTrigger>
+  </UserControl.Triggers>
+  <UserControl.Resources>
+    <Storyboard RepeatBehavior="00:00:01" x:Key="Storyboard1">
+      <Storyboard.Children>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rHeadline" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1920" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Headline" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="-1920" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rDescription" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1920" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Description" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1920" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard.Children>
+    </Storyboard>
+    <Storyboard RepeatBehavior="00:00:01" x:Key="Storyboard2">
+      <Storyboard.Children>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rHeadline" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="-1920" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Headline" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="-1920" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rDescription" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1920" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Description" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+          <DoubleAnimationUsingKeyFrames.KeyFrames>
+            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0" />
+            <SplineDoubleKeyFrame KeyTime="00:00:01" Value="1920" />
+          </DoubleAnimationUsingKeyFrames.KeyFrames>
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard.Children>
+    </Storyboard>
+  </UserControl.Resources>
+  <Grid InputMethod.IsInputMethodEnabled="True">
+    <Rectangle Stroke="#FF000000" StrokeThickness="0" Name="Rectangle1" Width="1925" Height="99.6738836265223" Margin="-3.60757827758789,883.139377537212,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.8" InputMethod.IsInputMethodEnabled="True">
+      <Rectangle.Fill>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FF4B56A7" Offset="0" />
+            <GradientStop Color="#FF001279" Offset="1" />
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <Rectangle RadiusX="50" RadiusY="50" Stroke="#FF000000" StrokeThickness="0" Name="rDescription" Width="1731.59269282815" Height="92.0378890392421" Margin="224.338287353516,851.205688476563,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.9" InputMethod.IsInputMethodEnabled="True">
+      <Rectangle.Fill>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFB1ACAC" Offset="0" />
+            <GradientStop Color="#FFFFFFFF" Offset="1" />
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+      <Rectangle.RenderTransform>
+        <TranslateTransform />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+    <Rectangle RadiusX="20" RadiusY="20" Stroke="#FF000000" StrokeThickness="0" Name="rHeadline" Width="2004.53856562923" Height="87.4303112313937" Margin="-21.0189456939697,796.626525878906,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="1" InputMethod.IsInputMethodEnabled="True">
+      <Rectangle.Fill>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FFDE0E0E" Offset="0" />
+            <GradientStop Color="#FF801C1C" Offset="1" />
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+      <Rectangle.RenderTransform>
+        <TranslateTransform />
+      </Rectangle.RenderTransform>
+    </Rectangle>
+    <mtl:TextBlockDesign FontWeight="Bold" FontFamily="Century Gothic" Fill="#FFFFFFFF" FontSize="70" Highlight="False" Stroke="#FF000000" StrokeThickness="1" Text="HEADLINE" Name="Headline" Width="1521.37077131258" Height="85.8266677856445" Margin="395.673889160156,800.219055175781,0,159" HorizontalAlignment="Left" VerticalAlignment="Top" InputMethod.IsInputMethodEnabled="True">
+      <mtl:TextBlockDesign.RenderTransform>
+        <TranslateTransform />
+      </mtl:TextBlockDesign.RenderTransform>
+    </mtl:TextBlockDesign>
+    <mtl:TextBlockDesign FontStyle="Normal" FontWeight="Bold" FontFamily="Century Gothic" Fill="#FF000000" FontSize="45" Stroke="#FF000000" StrokeThickness="0" Text="DESCRIPTION" Name="Description" Width="1538.27604871448" Height="55.1733322143555" Margin="379.449249267578,884.696350097656,0,66" HorizontalAlignment="Left" VerticalAlignment="Top" InputMethod.IsInputMethodEnabled="True">
+      <mtl:TextBlockDesign.RenderTransform>
+        <TranslateTransform />
+      </mtl:TextBlockDesign.RenderTransform>
+    </mtl:TextBlockDesign>
+    <Image Stretch="Fill" Width="1920" Height="1080" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="0" InputMethod.IsInputMethodEnabled="True" />
+    <Image Source="ABS IGBO NEWS.png" Name="Image1" Width="365.033829499319" Height="205.818673883624" Margin="-6.59810543060303,787.020324707031,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" InputMethod.IsInputMethodEnabled="True" />
+  </Grid>
+</UserControl>

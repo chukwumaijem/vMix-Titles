@@ -1,0 +1,24 @@
+<UserControl Panel.ZIndex="500" InputMethod.IsInputMethodEnabled="True" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:my="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+mc:Ignorable="d" Height="1080" Width="1920">
+  <UserControl.Resources>
+    <my:DoubleReverseConverter x:Key="DoubleReverseConverter" />
+    <Storyboard x:Key="CreditBoard">
+            <DoubleAnimation
+             Storyboard.TargetName="Cast"
+             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+             From="1080" To="{Binding ElementName=Cast, Path=ActualHeight, Mode=OneWay, Converter={StaticResource DoubleReverseConverter}}" 
+             AutoReverse="False" Duration="0:0:30" />
+    </Storyboard>
+  </UserControl.Resources>
+  <Grid InputMethod.IsInputMethodEnabled="True">
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="1832" Height="1080" Margin="50,50,50,0">
+    <TextBlock Text="Cast" FontWeight="Bold" FontSize="72" Foreground="#FFFFFFFF" TextAlignment="Center" Name="Cast"  HorizontalAlignment="Center">
+      <TextBlock.RenderTransform>
+        <TranslateTransform X="0" Y="0" />
+      </TextBlock.RenderTransform>
+    </TextBlock>
+		</StackPanel>
+  </Grid>
+</UserControl>

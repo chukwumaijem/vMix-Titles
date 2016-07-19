@@ -1,0 +1,36 @@
+<UserControl x:Class="ABSTickerHD"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:new="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+mc:Ignorable="d" Width="1920" Height="1080">
+  <UserControl.Resources>
+    <new:DoubleReverseConverter x:Key="DoubleReverseConverter">
+		</new:DoubleReverseConverter>
+    <Storyboard RepeatBehavior="Forever" x:Key="tickerStoryboard">
+            <DoubleAnimation
+             Storyboard.TargetName="AnimatedTicker"
+             Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+             From="1920" To="{Binding ElementName=AnimatedTicker, Path=ActualWidth, Mode=OneWay, Converter={StaticResource DoubleReverseConverter}}" 
+             AutoReverse="False" RepeatBehavior="Forever" Duration="0:2:0" />
+    </Storyboard>
+  </UserControl.Resources>
+  <Grid>
+    <Rectangle Stroke="#FF000000" StrokeThickness="0" Name="Rectangle1" Tag="Static" Width="1920" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+      <Rectangle.Fill>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFFF0000" Offset="0" />
+            <GradientStop Color="#FFAA0000" Offset="1" />
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+    <Canvas Height="130" Margin="0,960,0,0" VerticalAlignment="Center">
+      <TextBlock Height="88" HorizontalAlignment="Left" Name="AnimatedTicker" Text="But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? " FontWeight="Bold" FontSize="60" Foreground="#FFFFFFFF" Width="Auto" VerticalAlignment="Center" Canvas.Top="12">
+        <TextBlock.RenderTransform>
+          <TranslateTransform X="0" Y="0" />
+        </TextBlock.RenderTransform>
+      </TextBlock>
+    </Canvas>
+  </Grid>
+</UserControl>
