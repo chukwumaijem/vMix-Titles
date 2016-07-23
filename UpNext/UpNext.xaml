@@ -1,0 +1,7 @@
+<UserControl Width="1920" Height="1080" Panel.ZIndex="500" InputMethod.IsInputMethodEnabled="True" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mtl="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary">
+  <Grid InputMethod.IsInputMethodEnabled="True">
+    <Image Source="UpNextBar.png" Name="Image1" Width="1199.45737483085" Height="99.572395128552" Margin="47.7564282062411,870.786221020276,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" InputMethod.IsInputMethodEnabled="True" />
+    <Image Source="UpNextText.png" Name="Image2" Width="367.769959404601" Height="177.473612990528" Margin="41.1772665764548,734.871447902571,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" InputMethod.IsInputMethodEnabled="True" />
+    <mtl:TextBlockDesign Fill="#FF000000" FontSize="64" Text="Programme Title" Name="Programme" Width="984.627875507445" Height="73.5933303833008" Margin="223.044662475586,884.972961425781,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" />
+  </Grid>
+</UserControl>
