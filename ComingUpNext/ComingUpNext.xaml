@@ -33,26 +33,27 @@
 	
 	<Grid>
 		<Image Source="ComingUpNext.xaml.png" x:Name="Background" Width="1920" Height="1080" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="Fill" />
+		<my:TextBlockDesign Fill="#FF000000" FontSize="100" Text="COMING UP TONIGHT" Name="Topic" Width="1080" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="400" Canvas.Top="94.492" Height="124" Margin="466,32,370,0" FontWeight="Bold" />
 		<UniformGrid x:Name="uniformGrid" Margin="199.661,150.298,120,157.483" >
 			<Canvas Height="237" Margin="0,0,-800,0" VerticalAlignment="Top" x:Name="canvas">
 				<Image Source="ComingUpNext.Programme.png" x:Name="Image1" Width="250" Height="235" HorizontalAlignment="Left" />
 				<StackPanel Height="237" Canvas.Left="400" Canvas.Top="8" Width="1280" Orientation="Vertical">
 					<my:TextBlockDesign Fill="#FF000000" FontSize="64" Text="1st Programme Name" x:Name="Programme1" Width="1200" Height="73.594" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="400" HorizontalAlignment="Left" Canvas.Top="8" />
-					<my:TextBlockDesign Fill="#FF000000" FontSize="64" Text="Text" x:Name="Time1" Width="400" Height="73.594" Visibility="Visible" Canvas.Left="400" Canvas.Top="104" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+					<my:TextBlockDesign Fill="#FF000000" FontSize="50" Text="12:00AM" x:Name="Time1" Width="400" Height="73.594" Visibility="Visible" Canvas.Left="400" Canvas.Top="104" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
 				</StackPanel>
 			</Canvas>
 			<Canvas Height="237" VerticalAlignment="Center" Margin="0,0,-50,-400" HorizontalAlignment="Right" Width="1650" x:Name="canvas1">
 				<Image Source="ComingUpNext.Programme.png" x:Name="Image2" Width="250" Height="235" HorizontalAlignment="Left" VerticalAlignment="Top" />
 				<StackPanel Height="237" Canvas.Left="400" Canvas.Top="8" Width="1280" Orientation="Vertical">
 					<my:TextBlockDesign Fill="#FF000000" FontSize="64" Text="2nd Programme Name" x:Name="Programme2" Width="1200" Height="73.594" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="400" Canvas.Top="37.293" />
-					<my:TextBlockDesign Fill="#FF000000" FontSize="64" Text="Text" x:Name="Time2" Width="400" Height="73.594" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="400" Canvas.Top="117.293" />
+					<my:TextBlockDesign Fill="#FF000000" FontSize="50" Text="12:00AM" x:Name="Time2" Width="400" Height="73.594" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="400" Canvas.Top="117.293" />
 				</StackPanel>
 			</Canvas>
 			<Canvas Height="237" VerticalAlignment="Bottom" Margin="0,0,-800,0" x:Name="canvas2">
 				<Image Source="ComingUpNext.Programme.png" x:Name="Image3" Width="250" Height="235" HorizontalAlignment="Left" VerticalAlignment="Top" />
 				<StackPanel Height="237" Canvas.Left="400" Canvas.Top="8" Width="1280" Orientation="Vertical">
 					<my:TextBlockDesign Fill="#FF000000" FontSize="64" Text="3rd Programme Name" x:Name="Programme3" Width="1200" Height="73.594" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="400" Canvas.Top="14.492" />
-					<my:TextBlockDesign Fill="#FF000000" FontSize="64" Text="Text" x:Name="Time3" Width="400" Height="73.594" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="400" Canvas.Top="94.492" />
+					<my:TextBlockDesign Fill="#FF000000" FontSize="50" Text="12:00AM" x:Name="Time3" Width="400" Height="73.594" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="400" Canvas.Top="94.492" />
 				</StackPanel>
 			</Canvas>
 		</UniformGrid>

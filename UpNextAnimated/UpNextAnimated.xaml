@@ -1,0 +1,59 @@
+<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+						 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+						 mc:Ignorable="d" Width="1920" Height="1080"
+						 xmlns:my="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary">
+	<UserControl.Resources>
+		<Storyboard x:Key="Storyboard1" RepeatBehavior="0:0:1">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)" Storyboard.TargetName="Image1">
+				<SplineDoubleKeyFrame KeyTime="0" Value="236"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)" Storyboard.TargetName="Programme">
+				<SplineDoubleKeyFrame KeyTime="0" Value="236"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="Image2">
+				<SplineDoubleKeyFrame KeyTime="0" Value="-476"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="Storyboard2" RepeatBehavior="0:0:0.5">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)" Storyboard.TargetName="Image1">
+				<SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="236"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)" Storyboard.TargetName="Programme">
+				<SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="236"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="Image2">
+				<SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="-476"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
+  <Grid>
+    <Image Source="UpNextAnimatedBar.png" Name="Image1" Width="1199" Height="100" Margin="48,871,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+		<Image.RenderTransform>
+					<TranslateTransform/>
+			</Image.RenderTransform>
+		</Image>
+    <Image Source="UpNextAnimatedText.png" Name="Image2" Width="368" Height="177" Margin="41,735,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+			<Image.RenderTransform>
+					<TranslateTransform/>
+			</Image.RenderTransform>
+		</Image>
+    <my:TextBlockDesign Fill="#FF000000" FontSize="64" Text="Programme Title" Name="Programme" Width="984" Height="74" Margin="223,885,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+			<my:TextBlockDesign.RenderTransform>
+					<TranslateTransform/>
+			</my:TextBlockDesign.RenderTransform>
+		</my:TextBlockDesign>
+  </Grid>
+</UserControl>
